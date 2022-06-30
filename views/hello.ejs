@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Marker Labels</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    #map {
+      height: 90%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #user{
+      position: relative;
+      top: 20px;
+      background-color: black;
+      z-index: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id="app">
+      <h1>Welcome : {{name}}</h1>
+  </div>
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="/harita.js">
+
+  
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnnxZeyZfL-6CJH_0DsmfpG680LT3YCbE&callback=initMap&v=weekly"
+    async></script>
+  
+</body>
+
+</html>

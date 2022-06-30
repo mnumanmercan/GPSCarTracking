@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(201, 169, 169);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 3px solid #666;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li{
+    margin-right:30px;
+    
+}
+
+section{
+    color: white;
+    max-width: 800px;
+    margin: 100px 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin:auto;
+}
+
+form input{
+    margin-top:10px;
+    padding: 5px 10px;
+}
+
+img{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+    right: 30%;
+}
+
+#container{
+    display: flex;
+    left: 30%;
+    margin: 25px;
+    padding: 25px;
+}
